@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CBCustomCell.h
 //  Accessory
 //
 //  Created by 陈冰 on 2017/12/26.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CBCustomCell : UITableViewCell
 
 @end
-

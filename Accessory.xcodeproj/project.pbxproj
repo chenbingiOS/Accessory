@@ -8,24 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		072F04791FF20BB5003E4EE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F04781FF20BB5003E4EE4 /* AppDelegate.m */; };
-		072F047C1FF20BB5003E4EE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F047B1FF20BB5003E4EE4 /* ViewController.m */; };
 		072F047F1FF20BB5003E4EE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072F047D1FF20BB5003E4EE4 /* Main.storyboard */; };
 		072F04811FF20BB5003E4EE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072F04801FF20BB5003E4EE4 /* Assets.xcassets */; };
 		072F04841FF20BB5003E4EE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072F04821FF20BB5003E4EE4 /* LaunchScreen.storyboard */; };
 		072F04871FF20BB5003E4EE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F04861FF20BB5003E4EE4 /* main.m */; };
+		072F048E1FF212CB003E4EE4 /* TableData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 072F048D1FF212CA003E4EE4 /* TableData.plist */; };
+		072F04911FF21339003E4EE4 /* CBAccessoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F04901FF21339003E4EE4 /* CBAccessoryTableViewController.m */; };
+		072F04941FF213BB003E4EE4 /* CBCustomAccessoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F04931FF213BB003E4EE4 /* CBCustomAccessoryTableViewController.m */; };
+		072F04971FF214F4003E4EE4 /* CBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F04961FF214F4003E4EE4 /* CBDetailViewController.m */; };
+		072F049A1FF215E1003E4EE4 /* CBCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F04991FF215E1003E4EE4 /* CBCustomCell.m */; };
+		072F049D1FF217AE003E4EE4 /* CBCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F049C1FF217AE003E4EE4 /* CBCheckBox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		072F04741FF20BB5003E4EE4 /* Accessory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accessory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		072F04771FF20BB5003E4EE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		072F04781FF20BB5003E4EE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		072F047A1FF20BB5003E4EE4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		072F047B1FF20BB5003E4EE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		072F047E1FF20BB5003E4EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		072F04801FF20BB5003E4EE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		072F04831FF20BB5003E4EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		072F04851FF20BB5003E4EE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		072F04861FF20BB5003E4EE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		072F048D1FF212CA003E4EE4 /* TableData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TableData.plist; sourceTree = "<group>"; };
+		072F048F1FF21339003E4EE4 /* CBAccessoryTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBAccessoryTableViewController.h; sourceTree = "<group>"; };
+		072F04901FF21339003E4EE4 /* CBAccessoryTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBAccessoryTableViewController.m; sourceTree = "<group>"; };
+		072F04921FF213BB003E4EE4 /* CBCustomAccessoryTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBCustomAccessoryTableViewController.h; sourceTree = "<group>"; };
+		072F04931FF213BB003E4EE4 /* CBCustomAccessoryTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBCustomAccessoryTableViewController.m; sourceTree = "<group>"; };
+		072F04951FF214F4003E4EE4 /* CBDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBDetailViewController.h; sourceTree = "<group>"; };
+		072F04961FF214F4003E4EE4 /* CBDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBDetailViewController.m; sourceTree = "<group>"; };
+		072F04981FF215E1003E4EE4 /* CBCustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBCustomCell.h; sourceTree = "<group>"; };
+		072F04991FF215E1003E4EE4 /* CBCustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBCustomCell.m; sourceTree = "<group>"; };
+		072F049B1FF217AE003E4EE4 /* CBCheckBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBCheckBox.h; sourceTree = "<group>"; };
+		072F049C1FF217AE003E4EE4 /* CBCheckBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBCheckBox.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +74,18 @@
 			children = (
 				072F04771FF20BB5003E4EE4 /* AppDelegate.h */,
 				072F04781FF20BB5003E4EE4 /* AppDelegate.m */,
-				072F047A1FF20BB5003E4EE4 /* ViewController.h */,
-				072F047B1FF20BB5003E4EE4 /* ViewController.m */,
+				072F048F1FF21339003E4EE4 /* CBAccessoryTableViewController.h */,
+				072F04901FF21339003E4EE4 /* CBAccessoryTableViewController.m */,
+				072F04921FF213BB003E4EE4 /* CBCustomAccessoryTableViewController.h */,
+				072F04931FF213BB003E4EE4 /* CBCustomAccessoryTableViewController.m */,
+				072F04951FF214F4003E4EE4 /* CBDetailViewController.h */,
+				072F04961FF214F4003E4EE4 /* CBDetailViewController.m */,
+				072F04981FF215E1003E4EE4 /* CBCustomCell.h */,
+				072F04991FF215E1003E4EE4 /* CBCustomCell.m */,
+				072F049B1FF217AE003E4EE4 /* CBCheckBox.h */,
+				072F049C1FF217AE003E4EE4 /* CBCheckBox.m */,
 				072F047D1FF20BB5003E4EE4 /* Main.storyboard */,
+				072F048D1FF212CA003E4EE4 /* TableData.plist */,
 				072F04801FF20BB5003E4EE4 /* Assets.xcassets */,
 				072F04821FF20BB5003E4EE4 /* LaunchScreen.storyboard */,
 				072F04851FF20BB5003E4EE4 /* Info.plist */,
@@ -97,6 +120,7 @@
 		072F046C1FF20BB5003E4EE4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CB;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = ChenBing;
 				TargetAttributes = {
@@ -132,6 +156,7 @@
 				072F04841FF20BB5003E4EE4 /* LaunchScreen.storyboard in Resources */,
 				072F04811FF20BB5003E4EE4 /* Assets.xcassets in Resources */,
 				072F047F1FF20BB5003E4EE4 /* Main.storyboard in Resources */,
+				072F048E1FF212CB003E4EE4 /* TableData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				072F047C1FF20BB5003E4EE4 /* ViewController.m in Sources */,
+				072F04941FF213BB003E4EE4 /* CBCustomAccessoryTableViewController.m in Sources */,
 				072F04871FF20BB5003E4EE4 /* main.m in Sources */,
+				072F04971FF214F4003E4EE4 /* CBDetailViewController.m in Sources */,
+				072F049D1FF217AE003E4EE4 /* CBCheckBox.m in Sources */,
+				072F04911FF21339003E4EE4 /* CBAccessoryTableViewController.m in Sources */,
 				072F04791FF20BB5003E4EE4 /* AppDelegate.m in Sources */,
+				072F049A1FF215E1003E4EE4 /* CBCustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,10 +306,10 @@
 		072F048B1FF20BB5003E4EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6E47G4U83C;
 				INFOPLIST_FILE = Accessory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenbing.Accessory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,10 +320,10 @@
 		072F048C1FF20BB5003E4EE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6E47G4U83C;
 				INFOPLIST_FILE = Accessory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenbing.Accessory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
