@@ -18,6 +18,7 @@
 		072F04971FF214F4003E4EE4 /* CBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F04961FF214F4003E4EE4 /* CBDetailViewController.m */; };
 		072F049A1FF215E1003E4EE4 /* CBCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F04991FF215E1003E4EE4 /* CBCustomCell.m */; };
 		072F049D1FF217AE003E4EE4 /* CBCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 072F049C1FF217AE003E4EE4 /* CBCheckBox.m */; };
+		073FD4001FF235FB0023A0BD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 073FD3FF1FF235FB0023A0BD /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		072F04991FF215E1003E4EE4 /* CBCustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBCustomCell.m; sourceTree = "<group>"; };
 		072F049B1FF217AE003E4EE4 /* CBCheckBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBCheckBox.h; sourceTree = "<group>"; };
 		072F049C1FF217AE003E4EE4 /* CBCheckBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBCheckBox.m; sourceTree = "<group>"; };
+		073FD3FF1FF235FB0023A0BD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		072F046B1FF20BB5003E4EE4 = {
 			isa = PBXGroup;
 			children = (
+				073FD3FF1FF235FB0023A0BD /* README.md */,
 				072F04761FF20BB5003E4EE4 /* Accessory */,
 				072F04751FF20BB5003E4EE4 /* Products */,
 			);
@@ -155,6 +158,7 @@
 			files = (
 				072F04841FF20BB5003E4EE4 /* LaunchScreen.storyboard in Resources */,
 				072F04811FF20BB5003E4EE4 /* Assets.xcassets in Resources */,
+				073FD4001FF235FB0023A0BD /* README.md in Resources */,
 				072F047F1FF20BB5003E4EE4 /* Main.storyboard in Resources */,
 				072F048E1FF212CB003E4EE4 /* TableData.plist in Resources */,
 			);

@@ -8,7 +8,7 @@
 
 #import "CBAccessoryTableViewController.h"
 // view
-#import "CBCustomCell.h"
+#import "CBCheckBox.h"
 
 static NSString *AccessoryCellIdentifier = @"AccessoryCellIdentifier";
 
@@ -35,9 +35,32 @@ static NSString *AccessoryCellIdentifier = @"AccessoryCellIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CBCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:AccessoryCellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:AccessoryCellIdentifier forIndexPath:indexPath];
+    
+    if (cell.accessoryView == nil) {
+        CBCheckBox *checkBox = [[CBCheckBox alloc] initWithFrame:CGRectMake(0, 0, 25, 43)];
+        checkBox.opaque = NO;
+        [checkBox addTarget:self action:@selector(checkBoxTaped:forEvent:) forControlEvents:UIControlEventValueChanged];
+        
+        cell.accessoryView = checkBox;
+        cell.backgroundColor = [UIColor clearColor];
+    }
+    
+    NSDictionary *itmeDict = self.dataArray[indexPath.row];
+    cell.textLabel.text = itmeDict[@"text"];
+    CBCheckBox *checkBox = (CBCheckBox *)cell.accessoryView;
+    checkBox.checked = [itmeDict[@"checked"] boolValue];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+#pragma mark - Action
+- (void)checkBoxTaped:(id)sender forEvent:(UIEvent *)event {
+    
 }
 
 @end

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class CBCheckBox;
 @interface CBCustomCell : UITableViewCell
+
+@property (nonatomic, strong) IBOutlet CBCheckBox *checkBox;
 
 @end

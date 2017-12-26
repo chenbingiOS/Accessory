@@ -10,4 +10,7 @@
 
 @interface CBCheckBox : UIControl
 
+@property (assign, nonatomic, getter=isChecked) BOOL checked;
+@property (strong, nonatomic) UIColor *tintColor;
+
 @end
