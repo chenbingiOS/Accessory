@@ -76,13 +76,14 @@
                                             </connections>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4D5-JW-VYJ">
-                                            <rect key="frame" x="45" y="0.0" width="42" height="43.5"/>
+                                            <rect key="frame" x="45" y="0.0" width="262" height="43.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="4D5-JW-VYJ" secondAttribute="trailing" id="Deh-Ba-G59"/>
                                         <constraint firstItem="WHq-7O-yle" firstAttribute="leading" secondItem="P8b-63-55d" secondAttribute="leading" constant="12" id="Sus-R2-A6p"/>
                                         <constraint firstItem="4D5-JW-VYJ" firstAttribute="leading" secondItem="WHq-7O-yle" secondAttribute="trailing" constant="8" id="YWZ-kn-lcX"/>
                                         <constraint firstItem="WHq-7O-yle" firstAttribute="top" secondItem="P8b-63-55d" secondAttribute="top" id="eAM-dJ-S23"/>
@@ -94,7 +95,7 @@
                                 <connections>
                                     <outlet property="checkBox" destination="WHq-7O-yle" id="0nr-MN-T3d"/>
                                     <outlet property="titleLabel" destination="4D5-JW-VYJ" id="a2e-Xq-4C9"/>
-                                    <segue destination="X6L-kU-ghq" kind="show" trigger="accessoryAction" id="026-sV-1oN"/>
+                                    <segue destination="X6L-kU-ghq" kind="show" identifier="CBDeatilViewCtrlSegue" trigger="accessoryAction" id="026-sV-1oN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -117,13 +118,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVY-90-lef">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVY-90-lef" customClass="CBCheckBox">
                                 <rect key="frame" x="8" y="64" width="25" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="QxI-Hr-PRe"/>
                                     <constraint firstAttribute="height" constant="44" id="U6u-gO-7Cp"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="checkBoxHandle:" destination="X6L-kU-ghq" eventType="valueChanged" id="5zv-ci-3lT"/>
+                                </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjZ-d6-ZpX">
                                 <rect key="frame" x="41" y="64" width="42" height="44"/>
@@ -145,6 +149,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="L0D-EK-Crn"/>
+                    <connections>
+                        <outlet property="checkBox" destination="EVY-90-lef" id="jjX-73-bX1"/>
+                        <outlet property="titleLabel" destination="bjZ-d6-ZpX" id="fzN-MH-hTs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Usm-ZT-ilf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
