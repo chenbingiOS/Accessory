@@ -11,6 +11,7 @@
 @class CBCheckBox;
 @interface CBCustomCell : UITableViewCell
 
-@property (nonatomic, strong) IBOutlet CBCheckBox *checkBox;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet CBCheckBox *checkBox;
 
 @end

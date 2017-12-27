@@ -10,4 +10,6 @@
 
 @interface CBDetailViewController : UIViewController
 
+@property (strong, nonatomic) NSMutableDictionary *item;
+
 @end

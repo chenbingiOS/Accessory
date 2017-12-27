@@ -18,7 +18,7 @@
 }
 
 - (UIColor *)tintColor {
-    if ([[super superclass] respondsToSelector:@selector(tintColor)]) {
+    if ([[super superclass] instancesRespondToSelector:@selector(tintColor)]) {
         return [super tintColor];
     } else {
         return _tintColor;
@@ -26,7 +26,7 @@
 }
 
 - (void)setTintColor:(UIColor *)tintColor {
-    if ([[super superclass] respondsToSelector:@selector(setTintColor:)]) {
+    if ([[super superclass] instancesRespondToSelector:@selector(setTintColor:)]) {
         return [super setTintColor:tintColor];
     } else {
         _tintColor = tintColor;
@@ -40,7 +40,7 @@
     
     if (self.bounds.size.width < self.bounds.size.height) {
         // 垂直居中
-        transform = CGAffineTransformMakeTranslation((self.bounds.size.height - size)/2, 0);
+        transform = CGAffineTransformMakeTranslation(0, (self.bounds.size.height - size)/2);
     } else if (self.bounds.size.width > self.bounds.size.height) {
         // 水平居中
         transform = CGAffineTransformMakeTranslation((self.bounds.size.width - size)/2, 0);
@@ -66,9 +66,11 @@
         [checkBoxPath stroke];
     }
     
-    CGContextRef context = UIGraphicsGetCurrentContext();
+    // 绘制一个打勾
     if (self.checked) {
     #define P(POINT) (POINT * size)
+        CGContextRef context = UIGraphicsGetCurrentContext();
+
         CGContextSetGrayFillColor(context, 0.0f, 1.0f);
         CGContextConcatCTM(context, transform);
         

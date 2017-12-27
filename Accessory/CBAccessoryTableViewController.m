@@ -56,11 +56,37 @@ static NSString *AccessoryCellIdentifier = @"AccessoryCellIdentifier";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    UITableViewCell *targetCell = [tableView cellForRowAtIndexPath:indexPath];
+    CBCheckBox *targetCheckBox = (CBCheckBox *)targetCell.accessoryView;
+    targetCheckBox.checked = !targetCheckBox.checked;
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    // 改变数据
+    NSMutableDictionary *selectedItem = self.dataArray[(NSUInteger)indexPath.row];
+    selectedItem[@"checked"] = @(targetCheckBox.checked);
+
+    // 刷新UI
+    [self updateAccessibilityForCell:targetCell];
 }
 
 #pragma mark - Action
 - (void)checkBoxTaped:(id)sender forEvent:(UIEvent *)event {
+    NSSet *touches = [event allTouches];
+    UITouch *touch = [touches anyObject];
+    CGPoint currentTouchPositon = [touch locationInView:self.tableView];
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:currentTouchPositon];
+    if (indexPath != nil) {
+        NSMutableDictionary *selectedItem = self.dataArray[(NSUInteger)indexPath.row];
+        selectedItem[@"checked"] = @([(CBCheckBox *)sender isChecked]);
+    }
     
+    [self updateAccessibilityForCell:[self.tableView cellForRowAtIndexPath:indexPath]];
+}
+
+#pragma mark - Accessibility
+- (void)updateAccessibilityForCell:(UITableViewCell *)cell {
+    // cell的accessibilityValue 的值是 checkBox 的accessibilityValue
+    cell.accessibilityValue = cell.accessoryView.accessibilityValue;
 }
 
 @end
